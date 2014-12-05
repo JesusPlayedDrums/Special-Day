@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="scripts/script.js"></script>
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+<div style="background: #dddddd;">
+<section class="container" >
+    <div id="card" class="left-sided">
+      <figure class="left front">Front left</figure>
+      <figure class="left back">Back left</figure>
+      <figure class="right front"><textarea></textarea></figure>
+      <figure class="right back">Back right</figure>
+    </div>
+  </section>
+  <a href="#" id="turn-left">Flip</a>
+  <a href="#" id="turn-right">Flip</a>
+  <a href="#" id="open">Flip</a>
+  <a href="#" id="face">Flip</a>  
+</div>
+<script>
+
+$("a#turn-left").click(function(){
+  $("#card").removeClass();
+  $("#card").addClass("right-sided");
+});
+$("a#turn-right").click(function(){
+  $("#card").removeClass();
+  $("#card").addClass("left-sided");
+});
+$("a#open").click(function(){
+  $("#card").removeClass();
+  $("#card").addClass("opened");
+});
+$("a#face").click(function(){
+  $("#card").removeClass();
+  $("#card").addClass("face");
+});
+
+</script>
+</body>
+</html>

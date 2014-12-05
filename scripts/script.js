@@ -1,0 +1,16 @@
+$("a#turn-left").click(function(){
+  $("#card").removeClass();
+  $("#card").addClass("right-sided");
+});
+$("a#turn-right").click(function(){
+  $("#card").removeClass();
+  $("#card").addClass("left-sided");
+});
+$("a#open").click(function(){
+  $("#card").removeClass();
+  $("#card").addClass("opened");
+});
+$("a#face").click(function(){
+  $("#card").removeClass();
+  $("#card").addClass("face");
+});
